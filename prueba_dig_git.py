@@ -19,6 +19,7 @@ df=pd.read_excel('C:/Users/2076222/OneDrive - TCS COM PROD/Documents/prueba_dig.
 
 df['MILITAR']=np.where(df['CARGA']>1000,'Si','No')
 df['FLAG_PASAJEROS']=np.where(df['PASAJEROS']>=1,1,0)
+df['FLAG_CARGA']=np.where(df['PASAJEROS']<=0,1,0)
 
 
 # In[12]:
